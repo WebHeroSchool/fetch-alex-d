@@ -1,9 +1,7 @@
 window.onload = function () {
     
     var title = document.title;
-    console.log(title);
     var name = document.querySelector('.name');
-    console.log(name);
     var photoWrapper = document.querySelector('.photoWrapper');
     var info = document.querySelector('.info');
     
@@ -35,7 +33,10 @@ window.onload = function () {
                 link.innerHTML = 'Show profile';
                 link.setAttribute('href', user.html_url);
                 info.appendChild(link);
+            }else{
+                info.innerHTML = 'информаця о пользователе недоступна';
             }
+            
         })
         .catch(error => console.log(error));
     
