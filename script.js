@@ -7,8 +7,8 @@ window.onload = function () {
     var searchParams = new URLSearchParams(window.location.search);
     var login = searchParams.get('username');
     
-    var url = 'https://api.github.com/users/6thSence';
-    //var url = 'https://api.github.com/users/' + login;;
+    //var url = 'https://api.github.com/users/6thSence';
+    var url = 'https://api.github.com/users/' + login;;
     
     fetch(url)
         .then(response => response.json())
