@@ -8,8 +8,8 @@ window.onload = function () {
     var searchParams = new URLSearchParams(window.location.search);
     var login = searchParams.get('username');
     
-    //var url = 'https://api.github.com/users/6thSence';
-    var url = 'https://api.github.com/users/' + login;;
+    var url = 'https://api.github.com/users/6thSence';
+    //var url = 'https://api.github.com/users/' + login;;
     
     fetch(url)
         .then(response => response.json())
@@ -25,7 +25,7 @@ window.onload = function () {
                 }
     
                 var photo = document.createElement('img');
-                photo.setAttribute('alt', name);
+                photo.setAttribute('alt', user.name);
                 photo.setAttribute('src', user.avatar_url);            
                 photoWrapper.appendChild(photo);
                 
