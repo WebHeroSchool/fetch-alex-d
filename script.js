@@ -1,6 +1,5 @@
 window.onload = function () {
     
-    var title = document.title;
     var name = document.querySelector('.name');
     var photoWrapper = document.querySelector('.photoWrapper');
     var info = document.querySelector('.info');
@@ -15,7 +14,7 @@ window.onload = function () {
         .then(response => response.json())
         .then(user => {
             if (user.name) {
-                title.innerHTML = user.name;
+                document.title = user.name;
                 name.innerHTML = user.name;
                 
                 if(user.bio === null){

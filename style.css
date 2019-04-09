@@ -1,0 +1,19 @@
+img {
+    box-shadow: 2px 2px 5px gray;
+    margin-bottom: 25px;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.info a{
+    display: block;
+    max-width: 100px;
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
